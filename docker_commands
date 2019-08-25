@@ -1,0 +1,4 @@
+ docker build -t emp-mysql:v1 .
+ docker run -d -p 3306:3306 --name emp-mysql -e MYSQL_ROOT_PASSWORD=root emp-mysql:v1
+ docker exec -it emp-mysql bash
+ mysql -h10.31.33.208 -uroot -p
